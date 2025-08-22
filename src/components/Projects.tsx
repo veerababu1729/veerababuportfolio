@@ -164,7 +164,7 @@ const Projects = () => {
                   className="flex items-center gap-2 bg-gradient-primary text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-primary"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  Live Demo
+                  Live Link
                 </a>
                 <a 
                   href={projects[activeProject].links.github}
