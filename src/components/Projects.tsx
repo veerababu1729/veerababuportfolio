@@ -22,7 +22,8 @@ const Projects = () => {
         github: "#",
         demo: "#"
       },
-      type: "Live Platform"
+      type: "Live Platform",
+      image: "/lovable-uploads/8c15f813-48b3-4d03-8bfa-6a97dcb22e4b.png"
     },
     {
       title: "One Day Exam Preparation AI Tool",
@@ -182,6 +183,15 @@ const Projects = () => {
             
             {/* Project achievements */}
             <div className="bg-white/50 rounded-2xl p-8">
+              {projects[activeProject].image && (
+                <div className="mb-6">
+                  <img 
+                    src={projects[activeProject].image} 
+                    alt={`${projects[activeProject].title} screenshot`}
+                    className="w-full rounded-xl shadow-lg object-cover max-h-64"
+                  />
+                </div>
+              )}
               <h4 className="text-title font-bold text-foreground mb-6 flex items-center gap-2">
                 <Users className="w-5 h-5 text-primary" />
                 Key Achievements
