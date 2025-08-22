@@ -17,7 +17,7 @@ const ProfileLinks = () => {
       username: "Veerababu Palepu",
       description: "Professional network, career updates, tech insights",
       icon: <Linkedin className="w-6 h-6" />,
-      link: "https://linkedin.com/in/veerababu-palepu",
+      link: "https://www.linkedin.com/in/veerababupalepu/",
       color: "from-blue-600 to-blue-800",
       stats: "2k+ Connections"
     },
@@ -26,44 +26,22 @@ const ProfileLinks = () => {
       username: "Tech Demos",
       description: "Project demonstrations and technical walkthroughs",
       icon: <Youtube className="w-6 h-6" />,
-      link: "https://youtube.com/@veerababu1729",
+      link: "https://www.youtube.com/@vb.solutions/videos",
       color: "from-red-600 to-red-800",
       stats: "Video Portfolio"
     },
     {
       platform: "Instagram",
       username: "@veerababu1729",
-      description: "Behind the scenes, tech journey, community highlights",
+      description: "EE.info startup Behind the scenes, tech journey, community highlights",
       icon: <Instagram className="w-6 h-6" />,
-      link: "https://instagram.com/veerababu1729",
+      link: "https://instagram.com/ee.info",
       color: "from-pink-600 to-purple-600",
       stats: "Tech Journey"
     }
   ];
 
-  const portfolioDemos = [
-    {
-      title: "Live Project Demos",
-      description: "Interactive demonstrations of Telugumemes.com and AI tools",
-      icon: <Video className="w-5 h-5" />,
-      link: "#",
-      type: "demo"
-    },
-    {
-      title: "Technical Documentation",
-      description: "Detailed project documentation and architecture guides",
-      icon: <FileText className="w-5 h-5" />,
-      link: "#",
-      type: "docs"
-    },
-    {
-      title: "Video Portfolio",
-      description: "Comprehensive video showcasing all projects and achievements",
-      icon: <Youtube className="w-5 h-5" />,
-      link: "#",
-      type: "video"
-    }
-  ];
+  
 
   return (
     <section id="profile-links" className="section-padding">
@@ -112,44 +90,7 @@ const ProfileLinks = () => {
           ))}
         </div>
         
-        {/* Portfolio demos */}
-        <div className="bg-gradient-card rounded-3xl p-12 shadow-card">
-          <h3 className="text-headline font-bold text-foreground mb-8 text-center">
-            Portfolio Demonstrations
-          </h3>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {portfolioDemos.map((demo, index) => (
-              <div 
-                key={index}
-                className="text-center animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className="p-6 bg-gradient-primary rounded-2xl w-fit mx-auto mb-6">
-                  <div className="text-white">
-                    {demo.icon}
-                  </div>
-                </div>
-                
-                <h4 className="text-title font-bold text-foreground mb-3">
-                  {demo.title}
-                </h4>
-                
-                <p className="text-body text-muted-foreground mb-6 leading-relaxed">
-                  {demo.description}
-                </p>
-                
-                <a 
-                  href={demo.link}
-                  className="inline-flex items-center gap-2 bg-white border border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary hover:text-white transition-all duration-300"
-                >
-                  <span>Explore</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
+        
         
         {/* Quick contact */}
         <div className="text-center mt-16">

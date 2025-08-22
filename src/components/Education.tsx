@@ -6,15 +6,15 @@ const Education = () => {
     {
       degree: "B.Tech Computer Science Engineering",
       institution: "Aditya University, Surampalem",
-      year: "2022 - 2026",
+      year: "2026 Graduate",
       cgpa: "8.28",
-      description: "Specializing in AI, Machine Learning, and Full Stack Development"
+      description: "Specializing in Full Stack Development, AI and Machine Learning "
     },
     {
       degree: "XII (MPC)",
       institution: "Sri Chaitanya Junior College, Kakinada",
-      year: "2020 - 2022",
-      score: "955/1000",
+      
+      score: "Score : 955/1000",
       description: "Mathematics, Physics, Chemistry with excellent academic performance"
     }
   ];

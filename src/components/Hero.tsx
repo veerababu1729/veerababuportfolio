@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
           <p className="text-body text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Experienced in building innovative, scalable, efficient, and user-friendly software products from design to deployment. 
-            Passionate about AI, machine learning, and creating solutions that make a difference.
+            Passionate about Softwares, AI, machine learning, and creating solutions that make a difference.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

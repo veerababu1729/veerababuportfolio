@@ -9,13 +9,13 @@ const CodingProfiles = () => {
       stats: {
         rating: "1424",
         solved: "600+",
-        rank: "Top 15%"
+        solver: "DSA"
       },
       achievements: ["Maximum contest rating: 1424", "Consistent problem solving streak"],
       color: "from-orange-500 to-yellow-500",
       bgColor: "bg-orange-50 border-orange-200",
       textColor: "text-orange-700",
-      link: "https://leetcode.com/veerababu1729"
+      link: "https://leetcode.com/u/VeerababuP/"
     },
     {
       platform: "HackerRank",
@@ -23,13 +23,13 @@ const CodingProfiles = () => {
       stats: {
         rating: "5 Star",
         domains: "4",
-        badges: "15+"
+        badges: "6+"
       },
       achievements: ["5 star in Python, Java, Problem Solving, SQL", "Multiple domain expertise"],
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-50 border-green-200",
       textColor: "text-green-700",
-      link: "https://hackerrank.com/veerababu1729"
+      link: "https://www.hackerrank.com/profile/20A91A0546"
     },
     {
       platform: "CodeChef",
@@ -43,21 +43,21 @@ const CodingProfiles = () => {
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-50 border-blue-200",
       textColor: "text-blue-700",
-      link: "https://codechef.com/users/veerababu1729"
+      link: "https://www.codechef.com/users/veerababu1729"
     },
     {
       platform: "GeeksforGeeks",
       username: "@veerababu1729",
       stats: {
         problems: "200+",
-        articles: "5+",
+        articles_read: "100+",
         contributions: "Active"
       },
-      achievements: ["Regular problem solving", "Community contributions"],
+      achievements: ["Regular problem solving", "Community Learner"],
       color: "from-purple-500 to-violet-500",
       bgColor: "bg-purple-50 border-purple-200",
       textColor: "text-purple-700",
-      link: "https://auth.geeksforgeeks.org/user/veerababu1729"
+      link: "https://auth.geeksforgeeks.org/user/veerababup"
     }
   ];
 

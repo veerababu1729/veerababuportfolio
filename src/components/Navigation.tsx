@@ -16,7 +16,7 @@ const Navigation = () => {
 
   const socialLinks = [
     { icon: <Github className="w-5 h-5" />, href: "https://github.com/veerababu1729", label: "GitHub" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/veerababu-palepu", label: "LinkedIn" },
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/veerababupalepu/", label: "LinkedIn" },
     { icon: <Mail className="w-5 h-5" />, href: "mailto:veerababup114@gmail.com", label: "Email" }
   ];
 

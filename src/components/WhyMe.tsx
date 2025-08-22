@@ -45,8 +45,7 @@ const WhyMe = () => {
               Every project is an opportunity to push boundaries and create something meaningful."
             </blockquote>
             <p className="text-body opacity-90 max-w-3xl mx-auto">
-              From building platforms that serve thousands of users to contributing to open-source projects 
-              with 10k+ stars, I bring passion, precision, and innovation to every line of code.
+              From ideation to building platforms that serve thousands of users, I bring passion, precision, and innovation to every line of code from first principles of thinking.
             </p>
           </div>
         </div>

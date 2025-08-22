@@ -4,6 +4,17 @@ import { Briefcase, Calendar, MapPin, Users, Zap } from 'lucide-react';
 const WorkExperience = () => {
   const experiences = [
     {
+      title: "Lead developer and product architect",
+      company: "EE Info Edu Tech Startup",
+      location: "Remote",
+      period: "Aug 2022 - Present",
+      type: "Full-time",
+      achievements: [
+        "Developed, deployed and maintaining telugumemes.com and Exam AI tool.",
+        "Built a distrtibution of 50k+ Members Engineering Tech Community @ee.info, generated 100k+ revenue."
+      ]
+    },
+    {
       title: "AI & ML Intern (Onsite)",
       company: "OPENTAB Innovations",
       location: "SmartBridge",
@@ -17,7 +28,7 @@ const WorkExperience = () => {
     },
     {
       title: "MERN Full Stack Development Intern",
-      company: "EE Info Edu Tech Startup",
+      company: "SmartBridge",
       location: "Remote",
       period: "Jun 2024 - Jul 2024",
       type: "Internship",
@@ -31,12 +42,10 @@ const WorkExperience = () => {
       title: "UNSTOP Campus Ambassador",
       company: "UNSTOP",
       location: "Remote",
-      period: "Aug 2022 - Present",
+      period: "Dec 2024 - Apr 2025",
       type: "Leadership Role",
       achievements: [
         "Organized hackathons, coding challenges, promoted platform events among 1000s of students",
-        "Built a distribution of 50k+ Members Engineering Tech Community @ee.info",
-        "Generated 100k+ revenue through community building and event management",
         "Bridged gap between off-campus opportunities and students"
       ]
     }

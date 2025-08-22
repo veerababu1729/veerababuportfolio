@@ -21,7 +21,7 @@ const Achievements = () => {
         },
         {
           title: "CodeChef Rating & Ranking",
-          description: "127th rank among 16,134 participants in competitive programming",
+          description: "127th rank among 16,134 participants in competitive programming contest",
           metric: "1520",
           color: "text-purple-600"
         }
@@ -32,23 +32,24 @@ const Achievements = () => {
       icon: <Users className="w-6 h-6" />,
       items: [
         {
-          title: "Community Building",
-          description: "Built and leading 50k+ Members Engineering Tech Community @ee.info",
-          metric: "50k+",
-          color: "text-orange-600"
-        },
-        {
-          title: "Revenue Generation",
-          description: "Generated through community building and event management",
-          metric: "₹1L+",
-          color: "text-green-600"
-        },
-        {
           title: "Monthly Users",
           description: "Deployed and maintaining 2 live projects with proper documentation",
           metric: "30k",
           color: "text-blue-600"
+        },
+        {
+          title: "Revenue Generation",
+          description: "Generated through own python course, community building",
+          metric: "₹1L+",
+          color: "text-green-600"
+        },
+        {
+          title: "Community Building",
+          description: "At EE.Info startup, We Built and leading 50k+ Members Engineering Tech Community",
+          metric: "50k+",
+          color: "text-orange-600"
         }
+        
       ]
     },
     {
@@ -56,10 +57,10 @@ const Achievements = () => {
       icon: <Trophy className="w-6 h-6" />,
       items: [
         {
-          title: "Workshop Leadership",
-          description: "Organized workshop on 'Latest AI tech trends' for large audience",
-          metric: "3000+",
-          color: "text-purple-600"
+          title: "Open Source Contribution",
+          description: "Contributed to high impact open-source projects with 40+ repositories",
+          metric: "10k+ ⭐",
+          color: "text-yellow-600"
         },
         {
           title: "Hackathon Recognition",
@@ -68,11 +69,13 @@ const Achievements = () => {
           color: "text-red-600"
         },
         {
-          title: "Open Source Contribution",
-          description: "Contributed to high impact open-source projects with 40+ repositories",
-          metric: "10k+ ⭐",
-          color: "text-yellow-600"
+          title: "Workshop Leadership",
+          description: "Organized workshop on 'Latest AI tech trends' for large audience",
+          metric: "3000+",
+          color: "text-purple-600"
         }
+        
+      
       ]
     }
   ];
@@ -131,13 +134,13 @@ const Achievements = () => {
             <div className="grid md:grid-cols-4 gap-8">
               <div className="animate-fade-in-up delay-100">
                 <TrendingUp className="w-8 h-8 mx-auto mb-4 opacity-80" />
-                <div className="text-3xl font-black mb-2">80k+</div>
-                <p className="text-white/80">Total Users Reached</p>
+                <div className="text-3xl font-black mb-2">50k+</div>
+                <p className="text-white/80">Community Members</p>
               </div>
               <div className="animate-fade-in-up delay-200">
                 <Star className="w-8 h-8 mx-auto mb-4 opacity-80" />
-                <div className="text-3xl font-black mb-2">10k+</div>
-                <p className="text-white/80">GitHub Stars</p>
+                <div className="text-3xl font-black mb-2">45+</div>
+                <p className="text-white/80">GitHub Repos</p>
               </div>
               <div className="animate-fade-in-up delay-300">
                 <Target className="w-8 h-8 mx-auto mb-4 opacity-80" />
@@ -147,7 +150,7 @@ const Achievements = () => {
               <div className="animate-fade-in-up delay-400">
                 <Trophy className="w-8 h-8 mx-auto mb-4 opacity-80" />
                 <div className="text-3xl font-black mb-2">5+</div>
-                <p className="text-white/80">Major Awards</p>
+                <p className="text-white/80">Major Achievements</p>
               </div>
             </div>
           </div>

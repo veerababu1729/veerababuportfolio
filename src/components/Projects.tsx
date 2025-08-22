@@ -29,7 +29,7 @@ const Projects = () => {
       title: "One Day Exam Preparation AI Tool",
       subtitle: "AI-Powered Exam Assistant",
       description: "Built a fine-tuned AI-powered exam assistant that answers from user-uploaded docs, cutting prep time by 50%. Used RAG with FAISS & SpacyEmbeddings for fast, accurate document retrieval.",
-      impact: "50% reduction in prep time",
+      impact: "50% reduction in exam prep time",
       techStack: ["Python", "Streamlit", "FAISS", "PyPDF2", "SpacyEmbeddings", "RAG", "Google Gemini API"],
       achievements: [
         "50% reduction in exam preparation time",
@@ -42,7 +42,8 @@ const Projects = () => {
         github: "#",
         demo: "#"
       },
-      type: "SaaS Prototype"
+      type: "SaaS Prototype",
+      image: "/lovable-uploads/oneday exam ai toolimage.png"
     },
     {
       title: "Movie Recommendation System",
@@ -62,7 +63,8 @@ const Projects = () => {
         github: "#",
         demo: "#"
       },
-      type: "Data Science"
+      type: "Data Science",
+      image: "/lovable-uploads/movieproject.png"
     }
   ];
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, User, MessageSquare, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +11,10 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle form submission
+    const subject = `New portfolio message from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoHref = `mailto:veerababup114@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoHref;
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
   };
@@ -50,92 +53,16 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding">
       <div className="max-w-6xl mx-auto container-padding">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-display text-gradient mb-4">Let's Connect</h2>
           <p className="text-body text-muted-foreground max-w-2xl mx-auto">
             Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Contact form */}
-          <div className="bg-gradient-card rounded-3xl p-8 md:p-12 shadow-card">
-            <h3 className="text-headline font-bold text-foreground mb-8">Send a Message</h3>
-            
-            {isSubmitted ? (
-              <div className="text-center py-8 animate-scale-in">
-                <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                <h4 className="text-title font-bold text-foreground mb-2">Message Sent!</h4>
-                <p className="text-body text-muted-foreground">
-                  Thank you for reaching out. I'll get back to you soon!
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-body font-semibold text-foreground flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-4 bg-white border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-foreground"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-body font-semibold text-foreground flex items-center gap-2">
-                    <Mail className="w-4 h-4" />
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-4 bg-white border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-foreground"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-body font-semibold text-foreground flex items-center gap-2">
-                    <MessageSquare className="w-4 h-4" />
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="w-full px-4 py-4 bg-white border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 text-foreground resize-none"
-                    placeholder="Tell me about your project or how I can help you..."
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full flex items-center justify-center gap-2 bg-gradient-primary text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-primary"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </button>
-              </form>
-            )}
-          </div>
-          
+        <div className="flex justify-center">
           {/* Contact information */}
-          <div className="space-y-8">
+          <div className="space-y-8 w-full max-w-2xl">
             <div>
               <h3 className="text-headline font-bold text-foreground mb-6">Get in Touch</h3>
               <p className="text-body text-muted-foreground leading-relaxed mb-8">
@@ -169,7 +96,7 @@ const Contact = () => {
             </div>
             
             {/* Availability */}
-            <div className="bg-gradient-primary rounded-2xl p-8 text-white">
+            <div className="bg-gradient-primary rounded-2xl p-8 text-white animate-fade-in-up delay-100">
               <h4 className="text-title font-bold mb-4">Current Availability</h4>
               <p className="text-body opacity-90 mb-4">
                 🟢 Available for new opportunities
@@ -181,7 +108,7 @@ const Contact = () => {
             </div>
             
             {/* Response time */}
-            <div className="bg-gradient-card rounded-2xl p-6 text-center">
+            <div className="bg-gradient-card rounded-2xl p-6 text-center animate-scale-in delay-200">
               <h4 className="text-body font-semibold text-foreground mb-2">Quick Response</h4>
               <p className="text-caption text-muted-foreground">
                 I typically respond within 24 hours

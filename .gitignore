@@ -12,6 +12,19 @@ dist
 dist-ssr
 *.local
 
+# Build outputs
+build/
+
+# Env files
+.env
+.env.*
+
+# Vercel local config
+.vercel/
+
+# Package managers cache
+.pnpm-store/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

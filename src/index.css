@@ -124,6 +124,12 @@
   .bg-gradient-card {
     background: var(--gradient-card);
     backdrop-filter: blur(10px);
+    transition: var(--transition-smooth);
+  }
+
+  .bg-gradient-card:hover {
+    box-shadow: var(--shadow-card), 0 10px 30px -10px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
   }
 
   /* Text gradients */
@@ -151,6 +157,11 @@
 
   .card-3d:hover {
     transform: rotateX(5deg) rotateY(5deg) translateZ(10px);
+  }
+
+  /* Primary block subtle glow */
+  .glow-primary {
+    box-shadow: 0 10px 30px -10px hsl(214 100% 50% / 0.35);
   }
 
   /* Animated underline */

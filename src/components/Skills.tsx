@@ -118,9 +118,8 @@ const Skills = () => {
                 className="animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex justify-between items-center mb-3">
+                <div className="flex items-center mb-3">
                   <span className="text-body font-semibold text-foreground">{skill.name}</span>
-                  <span className="text-caption text-primary font-bold">{skill.level}%</span>
                 </div>
                 
                 <div className="w-full bg-secondary rounded-full h-3 overflow-hidden skill-bar">
