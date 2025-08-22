@@ -40,7 +40,7 @@ const Projects = () => {
       links: {
         live: "#",
         github: "#",
-        demo: "#"
+        demo: "https://youtu.be/HFexB2bScIU?si=HZOHxjJzqyesFGfO"
       },
       type: "SaaS Prototype",
       image: "/lovable-uploads/oneday exam ai toolimage.png"
