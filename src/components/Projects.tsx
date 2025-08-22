@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Play, Users, TrendingUp, Zap, Brain, Code, Database } from 'lucide-react';
-import ImageGenerator from './ImageGenerator';
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
-  const [projectImages, setProjectImages] = useState<{[key: string]: string}>({});
 
   const projects = [
     {
@@ -44,8 +42,7 @@ const Projects = () => {
         github: "#",
         demo: "#"
       },
-      type: "SaaS Prototype",
-      image: null
+      type: "SaaS Prototype"
     },
     {
       title: "Movie Recommendation System",
@@ -65,8 +62,7 @@ const Projects = () => {
         github: "#",
         demo: "#"
       },
-      type: "Data Science",
-      image: null
+      type: "Data Science"
     }
   ];
 
@@ -88,19 +84,6 @@ const Projects = () => {
       default:
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
-  };
-
-  const handleImagesGenerated = (examImage: string, movieImage: string) => {
-    setProjectImages({
-      'One Day Exam Preparation AI Tool': examImage,
-      'Movie Recommendation System': movieImage
-    });
-  };
-
-  const getCurrentProjectImage = () => {
-    const currentProject = projects[activeProject];
-    if (currentProject.image) return currentProject.image;
-    return projectImages[currentProject.title] || null;
   };
 
   return (
@@ -129,11 +112,6 @@ const Projects = () => {
             </button>
           ))}
         </div>
-
-        {/* Image Generator for missing project images */}
-        {(!projectImages['One Day Exam Preparation AI Tool'] || !projectImages['Movie Recommendation System']) && (
-          <ImageGenerator onImagesGenerated={handleImagesGenerated} />
-        )}
         
         {/* Active project display */}
         <div className="bg-gradient-card rounded-3xl p-8 md:p-12 shadow-card animate-scale-in">
@@ -205,10 +183,10 @@ const Projects = () => {
             
             {/* Project achievements */}
             <div className="bg-white/50 rounded-2xl p-8">
-              {getCurrentProjectImage() && (
+              {projects[activeProject].image && (
                 <div className="mb-6">
                   <img 
-                    src={getCurrentProjectImage()} 
+                    src={projects[activeProject].image} 
                     alt={`${projects[activeProject].title} screenshot`}
                     className="w-full rounded-xl shadow-lg object-cover max-h-64"
                   />
