@@ -92,7 +92,7 @@ const Footer = () => {
         <div className="border-t border-white/20 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-body text-white/70">
-              <span>© 2025 Veerababu Palepu.
+              <span>© 2025 Veerababu Palepu. </span>
             </div>
             
             <button
