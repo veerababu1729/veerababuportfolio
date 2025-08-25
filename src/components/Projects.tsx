@@ -19,7 +19,7 @@ const Projects = () => {
       ],
       links: {
         live: "https://telugumemes.com",
-        github: "#",
+        github: "https://github.com/veerababu1729/telugumemesbackend",
         demo: "#"
       },
       type: "Live Platform",
